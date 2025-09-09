@@ -1,0 +1,105 @@
+Lab Report — Fork and Exec
+Name: [Your Name]
+Date: September 9, 2025
+
+1. Build System & Project Structure
+
+Compilation Results
+[Insert screenshot showing:]
+gcc exercise1.c -o exercise1
+gcc exercise2.c -o exercise2
+gcc exercise3.c -o exercise3
+gcc exercise4.c -o exercise4
+gcc exercise5.c -o exercise5
+- All programs compiled successfully
+- No errors or warnings present
+
+Project Structure
+[Insert screenshot showing 'ls -la' output]
+- exercise1.c through exercise5.c source files
+- Corresponding executable files
+- README.md present
+
+2. Demo Programs
+
+Exercise 1: Basic Fork Demo
+[Insert screenshot showing execution of ./exercise1]
+- Shows parent creating single child process
+- Displays parent and child PIDs
+- Demonstrates basic fork() functionality
+
+Exercise 2: Parent-Child-Grandchild Process
+[Insert screenshot showing execution of ./exercise2]
+- Shows three generations of processes
+- Displays parent, child, and grandchild PIDs
+- Demonstrates process hierarchy creation
+
+Exercise 3: Multiple Children from One Parent
+[Insert screenshot showing execution of ./exercise3]
+- Shows parent creating two child processes
+- Displays PIDs of parent and both children
+- Demonstrates managing multiple child processes
+
+Exercise 4: Using Exec
+[Insert screenshot showing execution of ./exercise4]
+- Shows child process executing 'ls -l' command
+- Displays parent process message
+- Demonstrates exec() functionality
+
+Exercise 5: Simple Shell Implementation
+[Insert multiple screenshots showing:]
+1. Basic command execution:
+   ./exercise5
+   myshell> ls
+   myshell> pwd
+2. Error handling:
+   myshell> invalidcommand
+3. Exit sequence:
+   myshell> exit
+
+Key Features Demonstrated:
+- Command input/output
+- Process creation with fork()
+- Command execution with exec()
+- Error handling for invalid commands
+- Clean program termination
+
+3. Summary & Notes
+
+Successfully Demonstrated:
+- Process creation using fork()
+- Process replacement using exec()
+- Process hierarchies and relationships
+- Multiple process management
+- Basic shell functionality
+
+Implementation Details:
+- All programs tested on WSL Ubuntu
+- Compiled using gcc
+- Programs demonstrate:
+  * Basic fork() usage
+  * Process hierarchies
+  * Multiple child processes
+  * exec() functionality
+  * Interactive shell features
+
+4. Source Code Structure
+
+Source Files:
+exercise1.c: Basic parent-child process creation
+exercise2.c: Three-generation process hierarchy
+exercise3.c: Multiple children creation
+exercise4.c: exec() demonstration with ls command
+exercise5.c: Interactive shell implementation
+
+Build Commands:
+gcc exercise1.c -o exercise1
+gcc exercise2.c -o exercise2
+gcc exercise3.c -o exercise3
+gcc exercise4.c -o exercise4
+gcc exercise5.c -o exercise5
+
+Testing Environment:
+- OS: WSL Ubuntu
+- Compiler: gcc version [Insert your gcc version]
+- Shell: bash
